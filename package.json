@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/password-hash-ts.git"
+    "url": "https://github.com/nareshkumarlokrey/password-hash-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/password-hash-ts/issues"
+    "url": "https://github.com/nareshkumarlokrey/password-hash-ts/issues"
   },
-  "homepage": "https://github.com/yourusername/password-hash-ts#readme",
+  "homepage": "https://github.com/nareshkumarlokrey/password-hash-ts#readme",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
