@@ -1,0 +1,47 @@
+{
+  "name": "password-hash-ts",
+  "version": "1.0.0",
+  "description": "Zero-dependency TypeScript library for PBKDF2 password hashing across Node, browser and React environments.",
+  "author": "Naresh kumar Lokrey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/password-hash-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/password-hash-ts/issues"
+  },
+  "homepage": "https://github.com/yourusername/password-hash-ts#readme",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build:bundle": "tsup src/index.ts --format cjs,esm,iife --dts --minify --global-name PasswordHashTS --platform browser",
+    "test": "vitest",
+    "lint": "echo 'no lint configured'",
+    "prepare": "npm run build"
+  },
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.6.6",
+    "esbuild": "^0.19.0",
+    "tsup": "^6.7.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "sideEffects": false,
+  "keywords": ["password","hash","pbkdf2","typescript","crypto","webcrypto"]
+}
