@@ -4,6 +4,7 @@
 -->
 
 # password-hash-ts
+Current version: v1.0.1
 
 Password-hash-ts is a zero-dependency TypeScript library for secure PBKDF2 password hashing across Node.js, React, and browser environments. It uses platform-native cryptography (Web Crypto / Node.js crypto), produces self-contained hashes, and ships ESM, CJS and browser bundles.
 
